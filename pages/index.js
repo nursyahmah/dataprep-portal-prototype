@@ -46,7 +46,7 @@ return (
         </a>
       </div>
     </nav>
-    <div className="row align-items-center" style={{background:"#e3e3e3"}}>
+    <div className="align-items-center" style={{background:"#e3e3e3", display:"flex"}}>
         <div className="col-6" style={{paddingLeft:"90px"}}>
             <h1 className="welcome">WELCOME To </h1>
             <h1 className="mb-4 welcome">Dataprep Bhd</h1>
