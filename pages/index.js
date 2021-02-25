@@ -1,187 +1,84 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Home = () => (
-  <div className="container">
+
+
+const Home = () => {
+
+return (
+  <>
     <Head>
-      <title>Create Next App</title>
+      <title>Dataprep Holdings Bhd</title>
       <link rel="icon" href="/favicon.ico" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css"/>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" ></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
     </Head>
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+    <nav className="navbar navbar-light bg-light">
+      <div className="container-fluid p-0">
+        <a className="navbar-brand">
+          <img src="/logo-dataprepholdings.png" alt="dataprep logo" height="50"/>
         </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+        <a className="navbar-brand" href="#">
+          HOME
         </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+        <a className="navbar-brand" href="#">
+          ABOUT US
         </a>
-
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
+        <a className="navbar-brand" href="#">
+          INVESTOR RELATIONS
+        </a>
+        <a className="navbar-brand" href="#">
+          OUR SOLUTIONS
+        </a>
+        <a className="navbar-brand" href="#">
+          PRESS ROOM
+        </a>
+        <a className="navbar-brand" href="#">
+          CAREER
+        </a>
+        <a className="navbar-brand" href="#">
+          CONTACT US
         </a>
       </div>
-    </main>
+    </nav>
+    <div className="row align-items-center" style={{background:"#e3e3e3"}}>
+        <div className="col-6" style={{paddingLeft:"90px"}}>
+            <h1 className="welcome">WELCOME To </h1>
+            <h1 className="mb-4 welcome">Dataprep Bhd</h1>
+            <p style={{fontSize:24, fontWeight:300}}>Dataprep Group offers Consulting & Information Technology Services to governments & industries including telecommunications, financial services, products & SMEs.</p>
+            <a href="" className="btn btn-lg btn-dark mt-4">LEARN MORE</a>
+        </div>
+        <img src="/images/server-room.jpg" alt="server-room" className="col p-0"/>
+    </div>
+    <div className="row align-items-center" style={{height:"150px"}}>
+      <center style={{fontSize:30,fontWeight:"bold"}}>"CUSTOMER   SATISFACTION   IN   EVERY   DECISION"</center>
+    </div>
+    <hr/>
+    <div className="row">
+      <h5 className="pt-3 pb-3" style={{paddingLeft:"90px"}}>IT SOLUTIONS & SERVICES</h5>
+    </div>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
+    <div className="row" style={{paddingLeft:"90px"}}>
+      <div className="card p-0" style={{width: "15rem"}}>
+        <div className="card-img-top d-flex justify-content-center pb-4">
+          <i className="fas fa-server fa-3x"></i>
+        </div>
+        <div className="card-body p-0">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    .welcome{
+      font-size: 50px;
+    }
 
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
     `}</style>
 
     <style jsx global>{`
@@ -189,15 +86,29 @@ const Home = () => (
       body {
         padding: 0;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
+        font-family: -apple-system, BlinkMacSystemFont,Lato, Roboto, Oxygen, Ubuntu,
+          Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
+      }
+      
       * {
         box-sizing: border-box;
       }
+      a{
+        font-size: 16px!important;
+        font-weight: 300;
+      }
+      .active{
+        background-color:#000;
+        color:white;
+      }
+      .navbar{
+        background-color: #FFF;
+      }
     `}</style>
-  </div>
-)
+  </>
+);
+}
+
 
 export default Home
