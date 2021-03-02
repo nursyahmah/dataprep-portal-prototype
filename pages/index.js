@@ -1,6 +1,8 @@
+import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
 import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -11,13 +13,14 @@ return (
     <Head>
       <title>Dataprep Holdings Bhd</title>
       <link rel="icon" href="/favicon.ico" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossOrigin="anonymous" />
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css"/>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossOrigin="anonymous" ></script>
       <meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
     </Head>
-
+    <BrowserView>
+    <h1> This is rendered only in browser </h1>
     <nav className="navbar navbar-light bg-light">
       <div className="container-fluid p-0">
         <a className="navbar-brand">
@@ -51,7 +54,7 @@ return (
             <h2 className="welcome">WELCOME To </h2>
             <h2 className="mb-4 welcome">Dataprep Bhd</h2>
             <p style={{fontSize:20, fontWeight:300}}>Dataprep Group offers Consulting & Information Technology Services to governments & industries including telecommunications, financial services, products & SMEs.</p>
-            <a href="" className="btn btn-lg btn-dark mt-2">LEARN MORE</a>
+            <a href="" className="btn btn-dark mt-2">LEARN MORE</a>
         </div>
         <img src="/images/server-room.jpg" alt="server-room" className="col p-0"/>
     </div>
@@ -64,7 +67,7 @@ return (
     </div>
 
     <div className="row" style={{paddingLeft:"80px"}}>
-      <div className="card p-0" style={{width: "15rem"}}>
+      <div className="card p-0 border-0" style={{width: "15rem"}}>
         <div className="card-img-top d-flex justify-content-center pb-4">
           <i className="fas fa-server fa-3x"></i>
         </div>
@@ -74,6 +77,12 @@ return (
         </div>
       </div>
     </div>
+    </BrowserView>
+    <MobileView>
+        <h1> This is rendered only on mobile </h1>
+        
+    </MobileView>
+    
     <style jsx>{`
     .welcome{
       font-size: 40px;
@@ -109,6 +118,5 @@ return (
   </>
 );
 }
-
 
 export default Home
