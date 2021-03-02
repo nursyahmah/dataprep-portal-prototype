@@ -4,6 +4,7 @@ const BrowserIndex = () => {
   return (
     <>
       <nav className="navbar navbar-light bg-light">
+          {/* Menu */}
         <div className="container-fluid p-0">
           <a className="navbar-brand">
             <img src="/logo-dataprepholdings.png" alt="dataprep logo" height="45" />
@@ -37,7 +38,7 @@ const BrowserIndex = () => {
           IT SOLUTIONS & SERVICES
         </h4>
       </div>
-
+    {/* Services */}
       <div className="row justify-content-center mb-5">
         <div className="card p-0 border-0 mr-5" style={{ width: "15rem"}}>
           <div className="card-img-top d-flex justify-content-center pb-4">
