@@ -6,9 +6,9 @@ const FooterBrowser = () => {
         <div className="d-flex justify-content-center pt-5" style={{ background: "#e3e3e3", bottom:0, }}>
             <div className="row mr-auto ml-auto" style={{width:"85%"}}>
                 <ul className="list-unstyled col-3">
-                    <li className="mb-3"> <a href="#" style={{color:"inherit"}}>Home</a> </li>
-                    <li className="mb-3"> <a href="#" style={{color:"inherit"}}>About Us</a> </li>
-                    <li className="mb-3"> <a href="#" style={{color:"inherit"}}>Investor Relations</a> </li>
+                    <li className="mb-3"> <a href="/" style={{color:"inherit"}}>Home</a> </li>
+                    <li className="mb-3"> <a href="/about_us" style={{color:"inherit"}}>About Us</a> </li>
+                    <li className="mb-3"> <a href="/investor_relations" style={{color:"inherit"}}>Investor Relations</a> </li>
                     <li> <a href="#" style={{color:"inherit"}}>Our Solutions</a> </li>
 
                 </ul>
