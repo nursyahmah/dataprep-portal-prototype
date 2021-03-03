@@ -1,19 +1,11 @@
-import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
-import Head from 'next/head';
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import BrowserIndex from '../components/BrowserIndex';
-import MobileIndex from '../components/MobileIndex';
-import FooterMobile from '../components/FooterMobile';
+import React from 'react'
 import FooterBrowser from '../components/FooterBrowser';
 import BrowserTopMenu from '../components/BrowserTopMenu';
+import Head from 'next/head';
 
-
-
-const Home = () => {
-
-return (
-  <>
+const About = () => {
+    return (
+    <>
     <Head>
       <title>Dataprep Holdings Bhd</title>
       <link rel="icon" href="/favicon.ico" />
@@ -23,22 +15,9 @@ return (
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossOrigin="anonymous" ></script>
       <meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
     </Head>
-    <BrowserView>
-      <BrowserTopMenu/>
-      <BrowserIndex/>
-      <FooterBrowser/>
-    </BrowserView>
-    <MobileView>
-        <MobileIndex/>
-        <FooterMobile/>
-    </MobileView>
-    
-    <style jsx>{`
-    .welcome{
-      font-size: 40px;
-    }
-
-    `}</style>
+    <BrowserTopMenu/>
+    <h1>About Us Page</h1>
+    <FooterBrowser/>
 
     <style jsx global>{`
       html,
@@ -65,8 +44,8 @@ return (
         font-weight: 300;
       }
     `}</style>
-  </>
-);
+    </>
+    )
 }
 
-export default Home
+export default About

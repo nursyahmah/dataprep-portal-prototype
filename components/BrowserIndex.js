@@ -3,21 +3,6 @@ import React from "react";
 const BrowserIndex = () => {
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
-          {/* Menu */}
-        <div className="container-fluid p-0">
-          <a className="navbar-brand">
-            <img src="/logo-dataprepholdings.png" alt="dataprep logo" height="45" />
-          </a>
-          <a className="navbar-brand" href="#"> HOME </a>
-          <a className="navbar-brand" href="#"> ABOUT US </a>
-          <a className="navbar-brand" href="#"> INVESTOR RELATIONS </a>
-          <a className="navbar-brand" href="#"> OUR SOLUTIONS </a>
-          <a className="navbar-brand" href="#"> PRESS ROOM </a>
-          <a className="navbar-brand" href="#"> CAREER </a>
-          <a className="navbar-brand" href="#"> CONTACT US </a>
-        </div>
-      </nav>
       <div className="align-items-center" style={{ background: "#e3e3e3", display: "flex" }} >
         <div className="col-6" style={{ paddingLeft: "80px" }}>
           <h2 className="welcome">WELCOME To </h2>
@@ -25,7 +10,7 @@ const BrowserIndex = () => {
           <p style={{ fontSize: 20, fontWeight: 300 }}> Dataprep Group offers Consulting & Information Technology Services to governments & industries including telecommunications, financial services, products & SMEs. </p>
           <a href="" className="btn btn-dark mt-2"> LEARN MORE </a>
         </div>
-        <img src="/images/server-room.jpg" alt="server-room" className="col p-0" />
+        <img src="/images/server-room.jpg" alt="server-room" className="col-6 p-0" style={{overflow:"hidden"}}/>
       </div>
       <div className="row align-items-center" style={{ height: "140px" }}>
         <center style={{ fontSize: 20, fontWeight: "bold" }}>
@@ -113,7 +98,7 @@ const BrowserIndex = () => {
           </div>
         </div>
       </div>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center mb-5">
         <div className="card p-0 border-0 mr-5" style={{ width: "15rem" }}>
           <div className="card-img-top d-flex justify-content-center pb-4">
             <i className="fas fa-tools fa-3x"></i>
