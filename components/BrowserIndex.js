@@ -12,14 +12,14 @@ const BrowserIndex = () => {
         </div>
         <img src="/images/server-room.jpg" alt="server-room" className="col-6 p-0" style={{overflow:"hidden"}}/>
       </div>
-      <div className="row align-items-center" style={{ height: "140px" }}>
+      <div className="row align-items-center justify-content-center" style={{ height: "140px" }}>
         <center style={{ fontSize: 20, fontWeight: "bold" }}>
           "CUSTOMER SATISFACTION IN EVERY DECISION"
         </center>
       </div>
 
-      <div className="row pb-5">
-        <h4 className="pt-3 pb-3 border-top border-bottom" style={{ paddingLeft: "80px" }}>
+      <div className="row mb-5 border-top border-bottom">
+        <h4 className="pt-3 pb-3" style={{ paddingLeft: "80px" }}>
           IT SOLUTIONS & SERVICES
         </h4>
       </div>
