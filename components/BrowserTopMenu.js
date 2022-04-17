@@ -3,7 +3,7 @@ import React from 'react'
 const BrowserTopMenu = () => {
     return (
 <>
-    <nav className="navbar navbar-light bg-light" style={{ position:"sticky", top: 0, zIndex:"999",background:"#674ea7" }}>
+    <nav className="navbar navbar-light" style={{ position:"sticky", top: 0, zIndex:"999", background:"#674ea7" }}>
           {/* Menu */}
         <div className="container-fluid p-0">
           <a className="navbar-brand">
