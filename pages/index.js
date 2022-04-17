@@ -7,6 +7,8 @@ import MobileIndex from '../components/MobileIndex';
 import FooterMobile from '../components/FooterMobile';
 import FooterBrowser from '../components/FooterBrowser';
 import BrowserTopMenu from '../components/BrowserTopMenu';
+// add bootstrap css 
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 
@@ -15,7 +17,7 @@ const Home = () => {
 return (
   <>
     <Head>
-      <title>Dataprep Holdings Bhd</title>
+      <title>Vodus Research</title>
       <link rel="icon" href="/favicon.ico" />
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css"/>
